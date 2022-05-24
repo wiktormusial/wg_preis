@@ -4,7 +4,7 @@ from django.template.defaultfilters import slugify
 # Create your models here.
 class City(models.Model):
     city = models.CharField(max_length=30)
-    slug = models.SlugField(null=False, unique=True)
+    slug = models.SlugField(unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
